@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/three@0.112.1/examples/js/controls/OrbitControls.js"></script>
+<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://unpkg.com/jspdf-autotable@3.5.27/dist/jspdf.plugin.autotable.js"></script>
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="demostyle.css">
+    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div id="loading" style="height:98%; display:flex; width:99%; background-color:#eeeeee; z-index:100; flex-direction:column">
+        <div id="logo" style=" flex: none;">
+            <input style="width: 22%; margin: 2% auto; display: flex;" id="logo-image" type="image" src="Groupe Simphonis-logo.png" />
+        </div>
+        <div id="piecechoice" style="display:flex;flex:1">
+            <div class="divbtn">
+                <input id="machine" class="-image" type="image" src="machine.png" />
+            </div>
+
+            <div class="divbtn">
+                <input id="fauteuil" class="-image" type="image" src="fauteuil.png" />
+            </div>
+
+            <div class="divbtn">
+                <input id="kart" class="-image" type="image" src="kart.png" />
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
+
+<script>
+    $('.-image').on('click', async function (cl) {
+        window.location.href = "config.html?model=" + cl.target.id;
+    });
+</script>

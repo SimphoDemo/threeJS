@@ -1,0 +1,37 @@
+ {
+    "assise": {
+      "parametrable": true,
+      "materiaux": [ "Tissu", "Cuir" ],
+      "couleurs": [ "#444444", "#eeeeee", "#582900" ]
+    },
+    "pneus": {
+      "parametrable": false,
+      "materiaux": [ "Pneus" ]
+    },
+    "mecanisme": {
+      "parametrable": true,
+      "materiaux": [ "Metal" ],
+      "couleurs": [ "#444444", "#eeeeee" ]
+    },
+    "roues": {
+      "parametrable": true,
+      "materiaux": [ "Metal" ],
+      "couleurs": [ "#444444", "#eeeeee" ]
+    },
+    "visserie": {
+      "parametrable": false,
+      "materiaux": [ "Metal" ]
+    },
+    "repose-pied": {
+      "parametrable": true,
+      "materiaux": [ "Metal", "Plastique", "Metal", "Plastique" ],
+      "couleurs": [ "#444444", "#eeeeee", "#582900" ],
+      "options": [ "repose-pied", "repose-pied1", "repose-pied2" ]
+    },
+    "dossier": {
+      "parametrable": true,
+      "materiaux": [ "Plastique", "Metal" ],
+      "couleurs": [ "#444444", "#eeeeee" ]
+    }
+ }
+

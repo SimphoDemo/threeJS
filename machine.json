@@ -1,0 +1,66 @@
+{
+  "Autre": {
+    "parametrable": false,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#444444" ]
+  },
+  "Cabine": {
+    "parametrable": true,
+    "materiaux": [ "MetalPeint", "Metalcamo" ],
+    "couleurs": [ "#222222", "#aaaaaa" ]
+  },
+  "Chassis": {
+    "parametrable": true,
+    "materiaux": [ "MetalPeint", "Metal" ],
+    "couleurs": [ "#ffb100", "#ff0000", "#0000ff" ]
+  },
+  "Grille": {
+    "parametrable": true,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#444444", "#aaaaaa" ]
+  },
+  "Jantes": {
+    "parametrable": false,
+    "materiaux": [ "Metal" ]
+  },
+  "Godet": {
+    "parametrable": true,
+    "materiaux": [ "MetalPeint" ],
+    "couleurs": [ "#666666", "#333333", "#554444" ],
+    "options": [ "Godet", "Godet1", "Godet2" ]
+  },
+  "Pneus": {
+    "parametrable": false,
+    "materiaux": [ "Pneus" ],
+    "couleurs": [ "#333333" ]
+  },
+  "Vitre": {
+    "parametrable": false,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#333333" ]
+  },
+  "Pistons": {
+    "parametrable": false,
+    "materiaux": [ "Metal" ]
+  },
+  "Pistonsgaine": {
+    "parametrable": false,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#666666" ]
+  },
+  "Fauteuil": {
+    "parametrable": true,
+    "materiaux": [ "Cuir", "Tissu" ],
+    "couleurs": [ "#555555", "#111111" ]
+  },
+  "Plaques": {
+    "parametrable": false,
+    "materiaux": [ "Plaques" ],
+    "couleurs": [ "#222222" ]
+  },
+  "Tuyau": {
+    "parametrable": false,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#111111" ]
+  }
+}

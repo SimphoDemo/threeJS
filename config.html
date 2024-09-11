@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/three@0.112.1/examples/js/controls/OrbitControls.js"></script>
+<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+<script type="module" src="configurateur.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://unpkg.com/jspdf-autotable@3.5.27/dist/jspdf.plugin.autotable.js"></script>
+<html>
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="demostyle.css">
+    <link href="https://fonts.cdnfonts.com/css/open-sans" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="loading" style="height:98%; display:flex; width:99%; background-color:#eeeeee; position:absolute; z-index:100">
+        <!--<div id="piecechoice" style="display:flex;flex:1">
+        <div class="divbtn">
+            <button class="load buttonval" id="kart">Machine Roulante</button>
+            <input id="-image" type="image" src="machine.png" />
+        </div>
+
+        <div class="divbtn">
+            <button class="load buttonval" id="fauteuil">Fauteuil</button>
+            <input id="-image" type="image" src="fauteuil.png" />
+        </div>
+    </div>-->
+        <button class="buttonval" hidden></button>
+        <div id="txtload" style="display: none; flex: 1; align-items: center; margin: auto; flex-flow: column-reverse; ">
+            <i style="color: #ee801c; z-index: 70; font-size: 1.8em; " class="fa fa-spinner" aria-hidden="true"></i>
+            <h1 style="font-weight: 200; font-family: 'Open Sans Light', sans-serif; text-align-last: center; ">Chargement</h1>
+        </div>
+    </div>
+        <div id="container">
+            <div id="left">
+                <div id="logo">
+                    <input id="logo-image" type="image" src="Groupe Simphonis-logo.png" />
+                </div>
+                <div id="description">
+                    <div id="description-content">
+                        <h2 id="nametitle">Machine roulante</h2>
+                        <!--<p> Courte description du produit avec les dimensions, le poids maximum supporté, etc.</p>-->
+                        <h4><label style="display: inline; text-decoration: none;" class="fa fa-info-circle" aria-hidden="true"></label> <span>+ d’infos sur le produit</span></h4>
+                    </div>
+                </div>
+                <div id="configuration">
+                    <div id="options" style="display:none">
+                        <div class="config-left"></div>
+                        <div class="config-right options-group">
+                            <h3 class="config-title">Modèles</h3>
+                        </div>
+                    </div>
+                    <br />
+                    <div id="textures" style="display:none">
+                        <div class="config-left"></div>
+                        <div class="config-right2">
+                            <h3 class="config-title">Textures</h3><br />
+                            <div class="texture_group">
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div id="couleurs" style="display:none">
+                        <div class="config-left"></div>
+                        <div class="config-right2">
+                            <h3 class="config-title">Teintes</h3><br />
+                            <div class="color_group"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right">
+                <div id="ariane" style="visibility: hidden ">
+                    <div class="around">
+                        <input id="home" type="image" src="home.png" />
+                    </div>
+                    <div id="save2" class="around">
+                        <input id="save" type="image" src="save.png" />
+                    </div>
+                </div>
+                <div id="three">
+                    <canvas id="mycanvas"></canvas>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

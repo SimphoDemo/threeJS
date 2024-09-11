@@ -1,0 +1,23 @@
+{
+  "test": {
+    "parametrable": false,
+    "couleurs": [ "#ffffff" ],
+    "materiaux": [ "Plastique" ]
+  },
+  "protection": {
+    "parametrable": true,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#222222", "#888888" ]
+  },
+  "volant": {
+    "parametrable": true,
+    "materiaux": [ "Plastique" ],
+    "couleurs": [ "#ffffff" ],
+    "options": [ "volant", "volant1" ]
+  },
+  "carrosserie": {
+    "parametrable": true,
+    "materiaux": [ "kart" ],
+    "couleurs": [ "#003dff", "#ff0000" ]
+  }
+}

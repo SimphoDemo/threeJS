@@ -1,0 +1,403 @@
+﻿body, html {
+    height: 99%;
+    font-family: 'Open Sans Light', sans-serif;
+    background-color: #eeeeee;
+    overflow:hidden;
+}
+
+@import url('https://fonts.cdnfonts.com/css/open-sans');
+
+h4 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#right, #left {
+    display: flex;
+    flex-direction: column;
+}
+
+#left {
+    flex: 4;
+}
+
+#right {
+    flex: 6;
+}
+
+.texture_group, .color_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin-bottom: 1%;
+}
+
+.circle {
+    height: auto;
+    width: 45%;
+    border-radius: 100%;
+}
+
+.img {
+    height: 100% !important;
+    width: 100%;
+}
+
+.color {
+    height: auto !important;
+    margin: auto !important;
+}
+.supp {
+    margin: 0 4%;
+}
+.texture {
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    margin: 0 4%;
+    border-radius: 100%;
+    aspect-ratio: 1 / 1;
+    justify-self: normal;
+    width: 55px;
+}
+
+#logo {
+    flex: 1;
+}
+
+#description {
+    flex: 2;
+}
+
+#configuration {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+}
+
+.matname, .colname {
+    margin: 4% auto;
+    text-align-last: center;
+}
+
+
+#options, #textures, #couleurs {
+    display: flex;
+    width: 60%;
+    background-color: white;
+    border-radius: 11px;
+    margin-left: 5%;
+    box-shadow: 0 0 18px #ccc;
+}
+
+#ariane {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 3%;
+}
+
+canvas {
+    /*height: 100% !important;*/
+    width: 100% !important;
+    outline: none;
+    border: none;
+}
+
+#three {
+    flex: 8;
+    display: flex;
+}
+
+.piecetitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 80;
+    font-weight: medium;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    white-space: nowrap;
+    font-family: 'Open Sans';
+    color: grey;
+    /*-webkit-touch-callout: none; /* iOS Safari 
+    -webkit-user-select: none;  Safari 
+    -khtml-user-select: none; /* Konqueror HTML 
+    -moz-user-select: none;  Firefox 
+    -ms-user-select: none; Internet Explorer/Edge 
+    /*user-select: none;*/
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.around {
+    align-self: center;
+    margin-left: -5%;
+    position: relative;
+}
+
+.whitetext {
+    color: white;
+}
+
+.greytext {
+    color: grey;
+}
+
+.orangetext {
+    color: #ee801c;
+    
+    pointer-events:none;
+}
+
+#mycanvas {
+    flex: 1;
+}
+
+#logo-image {
+    width: 35%;
+    margin: 3.5% 5%;
+}
+
+#home {
+    z-index: 51;
+}
+
+#home, .chevron, #save {
+    position: relative;
+    height: 3%;
+    width: auto;
+    max-width: 100%;
+    filter: drop-shadow(0 0 0.6rem #bbb);
+}
+
+.chevron {
+    /*margin-left:-4%;*/
+}
+
+#description-content {
+    margin: 2.5% 5%;
+}
+
+p {
+    margin: 1% 20% 0 0;
+    font-size: 0.9em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.config-right {
+    flex: 75;
+    display: flex;
+    padding: 5%;
+}
+
+.config-right2 {
+    flex: 75;
+    display: flex;
+    padding: 5% 5% 0 5%;
+    flex-direction: column;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.config-left {
+    flex: 1;
+    background-color: #ee801c;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+
+.config-title {
+    /*align-self:center;*/
+}
+
+
+details {
+    position: relative;
+    width: 60%;
+    margin-right: 1rem;
+    margin-left: 10%;
+}
+
+    details[open] {
+        z-index: 1;
+    }
+
+summary {
+    padding: 3% 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ddd;
+    list-style: none;
+    background: none;
+    border: solid grey 1px;
+}
+
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+details[open] summary:before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+summary:after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: .5rem;
+    height: .5rem;
+    border-bottom: 1px solid currentColor;
+    border-left: 1px solid currentColor;
+    border-bottom-left-radius: 2px;
+    transform: rotate(45deg) translate(50%, 0%);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms
+}
+
+summary:focus {
+    outline: none;
+}
+
+details[open] summary:after {
+    transform: rotate(-45deg) translate(0%, 0%);
+}
+
+ul {
+    width: 100%;
+    background: #ddd;
+    position: absolute;
+    top: calc(100% + .5rem);
+    left: 0;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+    li:first-child {
+        padding-top: 0;
+    }
+
+    li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+/* FAKE SELECT */
+
+summary.radios, summary.radios2 {
+    counter-reset: radios;
+}
+
+    summary.radios:before, summary.radios2:before {
+        content: var(--selection);
+    }
+
+input[type=radio] {
+    counter-increment: radios;
+    appearance: none;
+    display: none;
+}
+
+    input[type=radio]:checked {
+        display: inline;
+        --display: block;
+    }
+
+    input[type=radio]:after {
+        content: attr(title);
+        display: inline;
+        font-size: 1rem;
+    }
+
+ul.list, ul.list2 {
+    counter-reset: labels;
+}
+
+label {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+    label span {
+        --display: none;
+        display: var(--display);
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #727272;
+        border-radius: 3px;
+    }
+
+.-image {
+    margin: 5%;
+    width: 90%;
+   
+}
+
+
+.divbtn {
+    
+    margin: auto 3%;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonval {
+    flex: 1;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 18px #ccc;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin: 13% 8% 8% 8%;
+    border: solid 1px;
+}
+
+    .buttonval:hover {
+        background-color: #eeeeee;
+    }
+
+    .buttonval:active {
+        background-color: #dddddd;
+    }
